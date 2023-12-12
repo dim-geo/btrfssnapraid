@@ -129,7 +129,7 @@ You can check if snapper has new snapshots, via `snapper -c [parity] ls`. You sh
 
 ```
 Now all the snapshots from all disks that have the same description counter (snapraidcounter1) should be snapraid protected!
-You can also verify via `btrfsnapraid 0 -- status`. This execute `snapraid status` on all snapraidcounter1 snapshots, not on live filesystem!
+You can also verify via `btrfsnapraid 1 -- status`. This execute `snapraid status` on all snapraidcounter1 snapshots, not on live filesystem!
 You can use the data disks as you wish without worrying if you delete/modify files in data disks. snapraidcounter1 snapshots should exist as long as your timeline algorithm dictates!
 
 **I highly recommend to execute `btrfsnapraid sync` on an hourly basis via cron or systemd timer**
