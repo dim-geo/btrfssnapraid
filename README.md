@@ -175,3 +175,6 @@ After we fix the live filesystem, we can start fixing old snapshots like this:
 7. go to step 4, fixing older snapshots via copying newer snapshots.
 8. Fix dates of snapper backups manually, by modifying info.xml of each snapshot and copy the date from the same snapraidcounter from good old disk. This will make sure that cleanup will delete correctly older snapshots.
 10. start using btrfsnapraid and snapper-cleanup normally. 
+
+#### Stop using btrfsnapraid
+No actions are needed, just use snapraid and/or snapraid-btrfs. Whenever you want, you can delete via snapper old snapshots or let the cleanup alogrithm delete them. Make sure to stop any cronjobs related.
