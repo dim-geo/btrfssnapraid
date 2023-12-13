@@ -4,7 +4,7 @@
 This is a utility in Python created to workaround the main drawback of [snapraid](https://www.snapraid.it/) and [snapraid-btrfs](https://github.com/automorphism88/snapraid-btrfs): *"After you execute snapraid sync, you loose old versions of files."*
 Thanks to [snapper](http://snapper.io/) and btrfs we can workaround this limitation and offer a **pseudo raid5/6 functionality** in snapraid. No need to worry if you `snapraid sync` and a file was accidentally modified. You can recover from that.
 
-## -How?
+## How?
 
 Before sync, create a btrfs snapshot of data disks.
 
@@ -30,7 +30,7 @@ I prefer the [alternative](https://wiki.archlinux.org/title/Snapper#Suggested_fi
 
 ## snapraid config
 
-Nothing special here to be done here. Make sure that disk entries are valid, and make sure to exclude .snapshots folder/subvolume as snapraid-btrfs does.
+Nothing special to be done here. Make sure that disk entries are valid, and make sure to exclude .snapshots folder/subvolume as snapraid-btrfs does.
 ```
 1-parity /mnt/parity/snapraid.parity
 content /mnt/contents1/snapraid.content
